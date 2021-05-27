@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-0">
+  <div class="container-fluid mx-0">
     <div class="row mx-0">
       <div class="col-md-10">
         <select-sport></select-sport>
