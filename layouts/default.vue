@@ -1,21 +1,31 @@
 <template>
-  <div class="bg-dark main-content">
-    <user-navbar/>
-    <navbar/>
-    <Nuxt />
+  <div class="bg-dark main-content container-fluid px-0 mx-0 w-100 d-flex">
+    <div class="sidebar">
+      <sidebar />
+    </div>
+    <div class="content w-100 mx-0">
+      <user-navbar />
+      <navbar />
+      <Nuxt />
+    </div>
   </div>
 </template>
 
 <script>
 import UserNavbar from '@/components/atoms/UserNavbar'
 import Navbar from '@/components/atoms/Navbar'
+import Sidebar from '@/components/atoms/Sidebar'
 export default {
-  components: { UserNavbar, Navbar }
+  components: { UserNavbar, Navbar, Sidebar }
 }
 </script>
 <style lang="scss">
+.sidebar{
+  width: 200px;
+}
 .main-content{
   min-height: 100vh;
+  width: 100% !important;
 }
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",

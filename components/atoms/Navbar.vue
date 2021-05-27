@@ -1,5 +1,5 @@
 <template>
-    <nav style="background-color: #292c31;" class="navbar navbar-expand-lg navbar-primary bg-gray">
+    <nav style="background-color: #292c31;" class="navbar navbar-expand-lg navbar-primary bg-gray ">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
