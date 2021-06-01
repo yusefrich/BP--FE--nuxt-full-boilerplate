@@ -10,9 +10,20 @@
     </div>
     <ul class="list-unstyled ps-0">
       <li class="mb-1 section-container">
-        <p class="section-title">
+        <p class="section-title mb-0">
           Filtrar período
         </p>
+        <div class="slider-holder p-2">
+          <label for="customRange1" class="form-label text-center text-primary w-100">Próximos eventos</label>
+          <input type="range" class="form-range" min="0" max="4" id="customRange1">
+          <div class="d-flex justify-content-between">
+            <p class="text-white">Todos</p>
+            <p class="text-white">3d</p>
+            <p class="text-white">1d</p>
+            <p class="text-white">3hrs</p>
+            <p class="text-white">1hr</p>
+          </div>
+        </div>
       </li>
       <li class="mb-1 section-container">
         <button
@@ -38,6 +49,10 @@ export default {}
 </script>
 <style lang="scss" scoped>
 @import "@/assets/layout/variables";
+.slider-holder{
+    background: $gray-800;
+
+}
 .section-container{
   margin-top: 3px;
   margin-bottom: 3px;
