@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import UserNavbar from '@/components/atoms/UserNavbar'
-import Navbar from '@/components/atoms/Navbar'
+import UserNavbar from '@/components/molecules/UserNavbar'
+import Navbar from '@/components/molecules/Navbar'
 import Sidebar from '@/components/atoms/Sidebar'
 export default {
   components: { UserNavbar, Navbar, Sidebar }

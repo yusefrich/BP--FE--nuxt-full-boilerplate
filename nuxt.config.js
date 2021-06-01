@@ -32,6 +32,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/dotenv',
     '@nuxtjs/eslint-module',
     '@nuxtjs/fontawesome'
   ],
@@ -58,7 +59,9 @@ export default {
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: process.env.BASE_URL
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

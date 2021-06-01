@@ -1,26 +1,17 @@
 <template>
-  <div class="container-fluid mx-0">
-    <div class="row mx-0">
-      <div class="col-md-10">
-        <select-sport></select-sport>
-        <current-games></current-games>
-        <games-list></games-list>
-      </div>
-      <div class="col-md-2">
-        <tickets></tickets>
-      </div>
-    </div>
-  </div>
+  <home @login="logIn" />
 </template>
 
 <script>
-import SelectSport from '@/components/atoms/SelectSport'
-import CurrentGames from '@/components/atoms/CurrentGames'
-import GamesList from '@/components/atoms/GamesList'
-import Tickets from '@/components/atoms/Tickets'
+import Home from '@/components/templates/Home'
 
 export default {
-  components: { SelectSport, CurrentGames, GamesList, Tickets }
+  components: { Home },
+  methods: {
+    logIn () {
+      console.log('login called')
+    }
+  }
 }
 </script>
 
