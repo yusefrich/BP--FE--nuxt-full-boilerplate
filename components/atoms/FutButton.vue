@@ -1,5 +1,5 @@
 <template>
-  <button v-bind:class="[`btn`, (sm)?'btn-sm':'', (primary)?'btn-primary':'']" >
+  <button @click="$emit('click')" v-bind:class="[`btn`, sm?'btn-sm':'', primary?'btn-primary':'']" >
     <slot />
   </button>
 </template>

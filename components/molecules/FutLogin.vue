@@ -1,8 +1,8 @@
 <template>
   <div class="d-flex">
-    <fut-input v-model="data.login" />
-    <fut-input v-model="data.password" />
-    <fut-button class="no-break" @click="()=>{$emit('submit', data)}" :primary="true" :sm="true">
+    <fut-input class="mx-2" type='email' v-model="data.login" />
+    <fut-input class="mx-2" type='password' v-model="data.password" />
+    <fut-button class="no-break" @click="()=>$root.$emit('login', data)" :primary="true" :sm="true">
       <strong class="text-uppercase font-weight-bold">log in</strong>
     </fut-button>
   </div>

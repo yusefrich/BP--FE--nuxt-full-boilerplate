@@ -30,7 +30,7 @@ export default {
       justify-content: center;
       width: 90px;
       height: 90px;
-      border: 2px solid $gray-800;
+      border: 2px solid $gray-700;
       padding-top: 5px;
       .icon{
         font-size: 40px;

@@ -1,6 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-primary bg-dark">
     <div class="container-fluid ps-4">
+      <a v-if="brand" class="navbar-brand" href="/">
+        <img :src="brand" alt="" height="34">
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -32,10 +35,10 @@
         </ul>
         <ul class="navbar-nav float-end">
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Criar Conta</a>
+            <a class="nav-link text-white" href="/register">Criar Conta</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Esqueci a senha</a>
+            <a class="nav-link text-white" href="/reset">Esqueci a senha</a>
           </li>
           <li class="nav-item">
             <fut-login />
@@ -48,6 +51,12 @@
 <script>
 import FutLogin from '@/components/molecules/FutLogin'
 export default {
-  components: { FutLogin }
+  components: { FutLogin },
+  props: {
+    brand: {
+      type: String,
+      default: null
+    }
+  }
 }
 </script>
