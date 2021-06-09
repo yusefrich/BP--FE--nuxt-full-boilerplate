@@ -1,13 +1,13 @@
 <template>
-  <div class="container-fluid mx-0">
-    <h1>Home Template</h1>
+  <div class="bg-dark main-content ">
+    <h1>register layout</h1>
+    <Nuxt />
   </div>
 </template>
 <script>
 export default {
 }
 </script>
-
 <style lang="scss" scoped>
 @import "@/assets/layout/variables";
 

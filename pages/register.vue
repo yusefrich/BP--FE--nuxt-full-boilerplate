@@ -8,7 +8,7 @@ import authService from '@/services/authService'
 
 export default {
   components: { Register },
-  layout: 'no_sidebar',
+  layout: 'register',
   mounted () {
     this.$root.$on('register', (payload) => {
       authService.register(payload).then((result) => {

@@ -1,15 +1,17 @@
 <template>
   <div class="container-fluid mx-0">
-    <fut-register />
+    <h1>Register Template</h1>
   </div>
 </template>
 <script>
-import FutRegister from '../molecules/FutRegister.vue'
-
 export default {
-  components: { FutRegister }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "@/assets/layout/variables";
+
+h1{
+  color: $primary
+}
 </style>
